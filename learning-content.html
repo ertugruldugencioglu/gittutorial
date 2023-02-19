@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temel Git ve GitHub </title>
+    </head>
+    <body>
+        <!-- header-START -->
+        <header style="background-color:dimgrey; padding: 1%;">
+            <!-- nav-START -->
+            <nav>
+                <ul>
+                    <li style="display: inline; margin: 1%;"><a href="index.html" style="color: white;">Ana Sayfa</a></li>
+                    <li style="display: inline; margin: 1%;"><a href="about.html" style="color: white;">Git ve GitHub Hakkında</a></li>
+                    <li style="display: inline; margin: 1%;"><a href="learning-content.html" style="color: white;">Git ve GitHub Öğren</a></li>
+                </ul>
+            </nav>
+            <!-- nav-END -->
+        </header>
+        <!-- header-END -->
+        <!-- main-START -->
+        <main>
+            <!-- header-START -->
+            <header>
+                <h1>Git ve GitHub Kullanımı</h1>
+                <hr>
+            </header>
+            <!-- header-END -->
+            <!-- section-START -->
+            <section>
+                <!-- header-START -->
+                <header>
+                    <h2>GitHub</h2>
+                </header>
+                <!-- header-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>Remote Repo oluşturma</h3>
+                    <p>Remote repository oluşturmak için ekranın sağ üst kösesinden "New Repository" seçeneği seçilir</p>
+                    <img width="15%" src="https://github.com/ertugruldugencioglu/kodluyoruzucuncurepo/blob/main/figures/create-repo.png?raw=true">
+                    <p>Repo oluşturma sayfasında istenilen özelliklerde repo oluşturulur</p>
+                    <img width="30%" src="https://github.com/ertugruldugencioglu/kodluyoruzucuncurepo/blob/main/figures/create_repo.png?raw=true">
+                </article>
+                <!-- article-END -->
+                <hr>
+            </section>
+            <!-- section-END -->
+            <!-- section-START -->
+            <section>
+                <!-- header-START -->
+                <header>
+                    <h2>Git</h2>
+                </header>
+                <!-- header-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>Git İndirme:</h3>
+                    <p>Git sürüm kontrol sistemini işletim sisteminize uygun olan versiyonunu <a href="https://git-scm.com/downloads">indirin</a></p>
+                </article>
+                <!-- article-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>Git Kurulumu:</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ke26wrLhBHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+                <!-- article-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>İlk Yapılandırma:</h3>
+                    <p>Komut istemini açtıktan sonra kimliğinizi Git sistemine tanıtmak için ilk yapmanız gereken mail ve kullanıcı adınızı girmek</p>
+                    <ol style="background-color: rgb(237, 237, 237)">
+                        <li>git config --global user.name "kullanici-adi"</li>
+                        <li>git config --global user.email "eposta-adresi"</li>
+                    </ol>
+                </article>
+                <!-- article-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>Kullanım:</h3>
+                    <p>Git'i kullanmak istediğiniz dizine gittikten sonra aşağıdaki komut ile git'i proje klasörümüze dahil edelim. <i>(Local repo oluşturma)</i></p>
+                    <ol style="background-color: rgb(237, 237, 237)">
+                        <li>git init</li>
+                    </ol>
+                    <p>Yeni eklenen veya üzerinde değişiklik yapılan dosyaları staged ortamına göndermek için:</p>
+                    <ol style="background-color: rgb(237, 237, 237)">
+                        <li>git add (dosya ismi)</li>
+                    </ol>
+                    <p>staged ortamına gönderilen dosyaların takibinin bırakılması için:</p>
+                    <ol style="background-color: rgb(237, 237, 237)">
+                        <li>git rm  --cached (dosya ismi)</li>
+                    </ol>
+                    <p>üzerinde çalışılan dosya klasörün içindeki bir değişime uğrayan, silinen veya eklenen dosyalar hakkında hakkında bilgi almak için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git status</li>
+                    </ol>
+                    <p>Staged ortamındaki dosyaları local bir repository'e göndermek için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git commit -m "(commit mesajınız)"</li>
+                    </ol>
+                    <p>Yapmış olduğunuz commit işlemlerini listelemek için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git log</li>
+                    </ol>
+                    <p>Remote veya local repolara branch eklemek için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git branch (branch ismi)</li>
+                    </ol>
+                    <p>Remote veya local repolarda branch silmek için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git branch -d (branch ismi)</li>
+                    </ol>
+                    <p>Branchlar arasında geçiş yapmak için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git checkout (branch ismi)</li>
+                    </ol>
+                    <p>Commitler arasında geçiş yapmak için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git checkout (commit id)</li>
+                    </ol>
+                    <p>Başka branchtaki değişiklikleri içinde bulunduğunuz branch'a aktarmak için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git merge (branch ismi)</li>
+                    </ol>
+                    <p>Remote repoları cihazımızda klasöre clonelamak için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git clone (repository clone link'i)</li>
+                    </ol>
+                </article>
+                <!-- article-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>Projelirimizi Remote Repoaya Aktarma:</h3>
+                    <p>Cloneladığımız repo klasörünün içine repomuza koymak istediğimiz dosyalarımızı aktardıktan veya hali hazırda var olan dosyalardaki değişiklikleri commit ettikten sonra;<br>komut istemi üzerinden dosya dizinine giderek aldığımız commitleri push etmek için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>git push origin (branch ismi)</li>
+                    </ol>
+                </article>
+                <!-- article-END -->
+                <!-- article-START -->
+                <article>
+                    <h3>.gitignore:</h3>
+                    <p>git'in görmesini istemediğimiz dosyaları belirtmemizi sağlar. Proje dizinine oluşturulur. Projede commit almadan önce gitignore dosyası yapılmalı commit edilen dosyalar .gitignore'a eklenmez.</p>
+                    <p>istenmeyen dosya uzantıları için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>*.(dosya uzantısı)</li>
+                    </ol>
+                    <p>istenmeyen klasör için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>(klasör ismi)/</li>
+                    </ol>
+                    <p>istenmeyen klasördeki seçili dosyaları ayırmak ve git tarafından izlenime sokmak için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>!(klasör)/(dosya ismi uzantısıyla beraber)</li>
+                    </ol>
+                    <p>istenmeyen dosyalar için:</p>
+                    <ol style="background-color: rgb(237, 237, 237);">
+                        <li>(dosya ismi uzantısıyla beraber)</li>
+                    </ol>
+                </article>
+                <!-- article-END -->
+            </section>
+            <!-- section-END -->
+        </main>
+        <!-- main-END -->
+        <!-- footer-START -->
+        <footer style="background-color: dimgray; padding: 1%; position:absolute; width: 98%; left: 0%;">
+            <ul>
+                <li style="list-style-type: none;">
+                    <h3 style="color: white;">Ertuğrul Düğencioğlu</h3>
+                </li>
+                <li style="list-style-type: none;">
+                    <a style="color: white;" href="https://github.com/ertugruldugencioglu">GitHub</a>
+                </li>
+                <li style="list-style-type: none;">
+                    <a style="color: white;" href="mailto:ertugruldugenci@gmail.com">ertugruldugenci@gmail.com</a>
+                </li>
+            </ul>
+        </footer>
+        <!-- footer-END -->
+    </body>
+</html>
