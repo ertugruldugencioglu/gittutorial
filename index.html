@@ -1,96 +1,60 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <!-- head-START -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ana Sayfa</title>
-        <!-- style-START -->
-        <style>
-            body{
-                margin: 0;
-            }
-            nav{
-                background-color:dimgrey; padding: 1%; 
-            }
-            .nav-item{
-                display: inline; margin: 1%;
-            }
-            .nav-link{
-                color: white;
-            }
-            .logo{
-                margin: 2vw;
-                width: 5vw;
-            }
-            footer{
-                background-color: dimgray; padding: 1%; position:absolute; width: 98%; left: 0%; bottom: 0%;
-            }
-            .footer-nav-item{
-                list-style-type: none;
-                margin: 1%;
-                color: white;
-            }
-        </style>
-        <!-- style-END -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <!-- head-END -->
-    <!-- body-START -->
-    <body>
-        <!-- header-START -->
+    <body>    
         <header>
             <nav>
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                <ul class="nav-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="index.html">Ana Sayfa</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Git ve GitHub Hakkında</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="about.html">Git ve GitHub Hakkında</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="learning-content.html">Git ve GitHub Öğren</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="learningcontent.html">Git ve GitHub Öğren</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <!-- header-END -->
-        <!-- main-START -->
         <main>
-            <h1>Git ve GitHub</h1>
-            <hr>
-            <!-- section-START -->
             <section>
-                <!-- article-START -->
                 <article>
-                    <p>Temel Git ve GitHub öğrenemek, öğrendiklerini pekiştirmek için bir kullanım kılavuzu hazırladım. Hakkında tarihçesi, yapılma amaçları, nasıl kullanılıcağı tamamen içerikte mevcuttur</p>
+                    <h1 class="font-fantasy h1-120 center-text">Git ve GitHub</h1>
                 </article>
-                <!-- article-END -->
-                <!-- article-START -->
                 <article>
-                    <a href="https://git-scm.com/"><img class="logo" src="img/git.png" alt="git logo">Git</a>
-                    <a href="https://github.com/"><img class="logo" src="img/github.png" alt="github logo">GitHub</a>
+                    <p class="font-sans-serif center-text p-20">Temel Git ve GitHub öğrenemek, öğrendiklerini pekiştirmek için bir kullanım kılavuzu hazırladım. Hakkında tarihçesi, yapılma amaçları, nasıl kullanılıcağı tamamen içerikte mevcuttur.</p>
                 </article>
-                <!-- article-END -->
+                <article>
+                    <ul>
+                        <li class="font-sans-serif p-20">Git: 
+                            <a class="font-sans-serif p-20" target="_blank" href="https://git-scm.com/">git-scm.com</a>
+                        </li class="font-sans-serif p-20">
+                        <li class="font-sans-serif p-20">Github: 
+                            <a class="font-sans-serif p-20" target="_blank" href="https://github.com/">github.com</a>
+                        </li>
+                    </ul>
+                </article>
             </section>
-            <!-- section-END -->
         </main>
-        <!-- main-END -->
-        <!-- footer-START -->
         <footer>
             <ul>
                 <li class="footer-nav-item">
-                    <h3 class="nav-link">Ertuğrul Düğencioğlu</h3>
+                    <a class="footer-nav-link" href="#top">Ana Sayfa</a>
                 </li>
                 <li class="footer-nav-item">
-                    <a class="nav-link" href="https://github.com/ertugruldugencioglu">GitHub</a>
+                    <a class="footer-nav-link" href="about.html">Git ve GitHub Hakkında</a>
                 </li>
                 <li class="footer-nav-item">
-                    <a class="nav-link" href="mailto:ertugruldugenci@gmail.com">ertugruldugenci@gmail.com</a>
+                    <a class="footer-nav-link" href="learningcontent.html">Git ve GitHub Öğren</a>
                 </li>
             </ul>
         </footer>
-        <!-- footer-END -->
     </body>
-    <!-- body-END -->
 </html>
