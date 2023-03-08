@@ -1,0 +1,95 @@
+/* *************************** */
+/*             body            */
+/* *************************** */
+body{
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+/* *************************** */
+/*            header           */
+/* *************************** */
+header{
+    background-color: #EDF1D6;
+    position: relative;
+    padding: 12px;
+}
+/* *************************** */
+.navbar-item{
+    list-style-type: none;
+    display: inline;
+}
+.navbar-link{
+    text-decoration: none;
+    background-color: #9DC08B;
+    color: black;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 10px;
+}
+.navbar-link:hover{
+    background-color: #609966;  
+}
+/* *************************** */
+/*            footer           */
+/* *************************** */
+footer{
+    background-color: #40513B;
+    margin-top: auto;
+    position: relative;
+}
+/* *************************** */
+.footer-nav-item{
+    list-style-type: none;
+}
+.footer-nav-link{
+    color: white;
+    text-decoration: none;
+}
+.footer-nav-link:hover{
+    text-decoration: underline;
+}
+
+/* *************************** */
+/*             main            */
+/* *************************** */
+main{
+    margin: 24px;
+}
+/* *************************** */
+/*          font-style         */
+/* *************************** */
+.font-sans-serif{
+    font-family: sans-serif;
+}
+.font-fantasy{
+    font-family: fantasy;
+}
+.h1-120{
+    font-size: 120px;
+}
+.h1-40{
+    font-size: 40px;
+}
+.h2-30{
+    font-size: 30px;
+}
+.h3-25{
+    font-size: 25px;
+}
+.p-20{
+    font-size: 20px;
+}
+.center-text{
+    text-align: center;
+}
+.code{
+    width: 500px;
+    background-color: rgb(207, 207, 207);
+}
+.code li{
+    list-style-type: ">>> "; 
+    padding: 4px;
+}
