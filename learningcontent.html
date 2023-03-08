@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Git ve Github Öğren</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="about.html">Git ve GitHub Hakkında</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="learningcontent.html">Git ve GitHub Öğren</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main> 
+            <section>
+                <article>
+                    <h1 class="font-sans-serif h1-40 center-text">Git ve GitHub Kullanımı</h1>
+                    <hr>
+                </article>
+                <h2 class="font-sans-serif h2-30">GitHub</h2>
+                <article>
+                    <h3 class="font-sans-serif h3-25">Remote Repo oluşturma</h3>
+                    <p class="font-sans-serif p-20">Remote repository oluşturmak için ekranın sağ üst kösesinden "New Repository" seçeneği seçilir</p>
+                    <img width="250px" src="img/create-repo.png">
+                    <p class="font-sans-serif p-20">Repo oluşturma sayfasında istenilen özelliklerde repo oluşturulur</p>
+                    <img width="400px" src="img/create_repo.png">
+                </article>
+                <hr>
+            </section>
+            <section>
+                <article>
+                    <h3 class="font-sans-serif h3-25">Git İndirme:</h3>
+                    <p class="font-sans-serif p-20">Git sürüm kontrol sistemini işletim sisteminize uygun olan versiyonunu <a href="https://git-scm.com/downloads">indirin</a></p>
+                </article>
+                <article>
+                    <h3 class="font-sans-serif h3-25">Git Kurulumu:</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ke26wrLhBHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+                <article>
+                    <h3 class="font-sans-serif h3-25">İlk Yapılandırma:</h3>
+                    <p class="font-sans-serif p-20">Komut istemini açtıktan sonra kimliğinizi Git sistemine tanıtmak için ilk yapmanız gereken mail ve kullanıcı adınızı girmek</p>
+                    <ol class="code">
+                        <li>git config --global user.name "kullanici-adi"</li>
+                        <li>git config --global user.email "eposta-adresi"</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3 class="font-sans-serif h3-25">Kullanım:</h3>
+                    <p class="font-sans-serif p-20">Git'i kullanmak istediğiniz dizine gittikten sonra aşağıdaki komut ile git'i proje klasörümüze dahil edelim. <i>(Local repo oluşturma)</i></p>
+                    <ol class="code">
+                        <li>git init</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Yeni eklenen veya üzerinde değişiklik yapılan dosyaları staged ortamına göndermek için:</p>
+                    <ol class="code">
+                        <li>git add (dosya ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">staged ortamına gönderilen dosyaların takibinin bırakılması için:</p>
+                    <ol class="code">
+                        <li>git rm  --cached (dosya ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">üzerinde çalışılan dosya klasörün içindeki bir değişime uğrayan, silinen veya eklenen dosyalar hakkında hakkında bilgi almak için:</p>
+                    <ol class="code">
+                        <li>git status</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Staged ortamındaki dosyaları local bir repository'e göndermek için:</p>
+                    <ol class="code">
+                        <li>git commit -m "(commit mesajınız)"</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Yapmış olduğunuz commit işlemlerini listelemek için:</p>
+                    <ol class="code">
+                        <li>git log</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Remote veya local repolara branch eklemek için:</p>
+                    <ol class="code">
+                        <li>git branch (branch ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Remote veya local repolarda branch silmek için:</p>
+                    <ol class="code">
+                        <li>git branch -d (branch ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Branchlar arasında geçiş yapmak için:</p>
+                    <ol class="code">
+                        <li>git checkout (branch ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Commitler arasında geçiş yapmak için:</p>
+                    <ol class="code">
+                        <li>git checkout (commit id)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Başka branchtaki değişiklikleri içinde bulunduğunuz branch'a aktarmak için:</p>
+                    <ol class="code">
+                        <li>git merge (branch ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <p class="font-sans-serif p-20">Remote repoları cihazımızda klasöre clonelamak için:</p>
+                    <ol class="code">
+                        <li>git clone (repository clone link'i)</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3 class="font-sans-serif h3-25">Projelirimizi Remote Repoaya Aktarma:</h3>
+                    <p class="font-sans-serif p-20">Cloneladığımız repo klasörünün içine repomuza koymak istediğimiz dosyalarımızı aktardıktan veya hali hazırda var olan dosyalardaki değişiklikleri commit ettikten sonra;<br>komut istemi üzerinden dosya dizinine giderek aldığımız commitleri push etmek için:</p>
+                    <ol class="code">
+                        <li>git push origin (branch ismi)</li>
+                    </ol>
+                </article>
+                <article>
+                    <h3 class="font-sans-serif h3-25">.gitignore:</h3>
+                    <p class="font-sans-serif p-20">git'in görmesini istemediğimiz dosyaları belirtmemizi sağlar. Proje dizinine oluşturulur. Projede commit almadan önce gitignore dosyası yapılmalı commit edilen dosyalar .gitignore'a eklenmez.</p>
+                    <p class="font-sans-serif p-20">istenmeyen dosya uzantıları için:</p>
+                    <ol class="code">
+                        <li>*.(dosya uzantısı)</li>
+                    </ol>
+                    <p class="font-sans-serif p-20">istenmeyen klasör için:</p>
+                    <ol class="code">
+                        <li>(klasör ismi)/</li>
+                    </ol>
+                    <p class="font-sans-serif p-20">istenmeyen klasördeki seçili dosyaları ayırmak ve git tarafından izlenime sokmak için:</p>
+                    <ol class="code">
+                        <li>!(klasör)/(dosya ismi uzantısıyla beraber)</li>
+                    </ol>
+                    <p class="font-sans-serif p-20">istenmeyen dosyalar için:</p>
+                    <ol class="code">
+                        <li>(dosya ismi uzantısıyla beraber)</li>
+                    </ol>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link" href="about.html">Git ve GitHub Hakkında</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link" href="#top">Git ve GitHub Öğren</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
