@@ -1,117 +1,78 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <!-- head-START -->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hakkında</title>
-        <!-- style-START -->
-        <style>
-            body{
-                margin: 0;
-            }
-            nav{
-                background-color:dimgrey; padding: 1%; 
-            }
-            .nav-item{
-                display: inline; margin: 1%;
-            }
-            .nav-link{
-                color: white;
-            }
-            footer{
-                background-color: dimgray; padding: 1%; position:relative; width: 98%; left: 0%; bottom: 0%;
-            }
-            .footer-nav-item{
-                list-style-type: none;
-                margin: 1%;
-                color: white;
-            }
-        </style>
-        <!-- style-END -->
+        <title>Git ve Github hakkında</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <!-- head-END -->
-    <!-- body-START -->
     <body>
-        <!-- header-START -->
         <header>
             <nav>
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                <ul class="nav-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="index.html">Ana Sayfa</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Git ve GitHub Hakkında</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="about.html">Git ve GitHub Hakkında</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="learning-content.html">Git ve GitHub Öğren</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link font-sans-serif" href="learningcontent.html">Git ve GitHub Öğren</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <!-- header-END -->
-        <!-- main-START -->
         <main>
-            <h1>Git ve GitHub Nedir?</h1>
-            <hr>
-            <!-- section-START -->
             <section>
-                <h2>Git</h2>
-                <!-- article-START -->
+                <article1>
+                    <h1 class="font-sans-serif center-text h1-40">Git ve GitHub Nedir?</h1>
+                    <hr>
+                </article1>
                 <article>
-                    <h3>Nedir?</h3>
-                    <p>Git, bir sürüm kontrol sistemidir.<br>Kullanımı basittir.<br>Linux, BSD, Solaris, Darwin, Windows, Android ve diğer işletim sistemlerinde çalışır.<br>Kısaca anlatmak gerekirse yaptığımız projelerin adım adım versiyonlarının kopyalarını alabildiğimiz ve ihtiyaç halinde bu versiyonlara geri dönmemeizi sağlayan basit sistemdir</p>
-                    <h3>Neden ihtiyaç Duyarız?</h3>
-                    <p>Örnek vermek gerekirse bir projemiz olsun bu projemiz üstünde değişiklik yapcağımız zaman projemizin güvende olması amacıyla bir kopyasını oluşturup kopya üstünde değişiklik yapıp eğer çalışıyor ise bu değişiklikleri ana projeye geçiririz ama bunu yapmak meşakkatli olduğu için bunu daha kısa yoldan ve bir kopya oluşturmaya gerek kalmadan git sürüm kontrol sistemi ile yapabiliriz.</p>
+                    <h2 class="font-sans-serif h2-30">Git</h2>
+                    <h3 class="font-sans-serif h3-25">Nedir?</h3>
+                    <p class="font-sans-serif p-20">Git, bir sürüm kontrol sistemidir.<br>Kullanımı basittir.<br>Linux, BSD, Solaris, Darwin, Windows, Android ve diğer işletim sistemlerinde çalışır.<br>Kısaca anlatmak gerekirse yaptığımız projelerin adım adım versiyonlarının kopyalarını alabildiğimiz ve ihtiyaç halinde bu versiyonlara geri dönmemeizi sağlayan basit sistemdir</p>
+                    <h3 class="font-sans-serif h3-25">Neden ihtiyaç Duyarız?</h3>
+                    <p class="font-sans-serif p-20">Örnek vermek gerekirse bir projemiz olsun bu projemiz üstünde değişiklik yapcağımız zaman projemizin güvende olması amacıyla bir kopyasını oluşturup kopya üstünde değişiklik yapıp eğer çalışıyor ise bu değişiklikleri ana projeye geçiririz ama bunu yapmak meşakkatli olduğu için bunu daha kısa yoldan ve bir kopya oluşturmaya gerek kalmadan git sürüm kontrol sistemi ile yapabiliriz.</p>
+                    <hr>
                 </article>
-                <!-- article-END -->
-                <hr>
+                <article>
+                    <h2 class="font-sans-serif h2-30">GitHub</h2>
+                    <h3 class="font-sans-serif h3-25">Nedir?</h3>
+                    <p class="font-sans-serif p-20">GitHub, kalabalık bir ekibin sürüm kontrol sisteminde bir yazılım geliştirirken kullanabilecekleri internet tabanlı bir depolama servisidir.<br>GitHub servisi sayesinde pek çok kişiden oluşan kalabalık yazılım geliştirici ekipler bile aynı anda aynı proje üzerinde çalışabilir ve ayrı değişiklikler yapabilirler.</p>
+                    <h3 class="font-sans-serif h3-25">Neden ihtiyaç Duyarız?</h3>
+                    <p class="font-sans-serif p-20">Sürüm kontrol sisteminde <i>(git)</i> kayıt aldığımız versiyonları başka cihazlardan ulaşmak istediğimzde bize yardım eder. GitHub üstünden repository denilen sürüm geçmişlerinin ve dosyaların tutulduğu depolara projemiji göndererek uzak cihazlardan ulaşım sağlayabiliriz</p>
+                    <hr>
+                </article>
             </section>
-            <!-- section-END -->
-            <!-- section-START -->
             <section>
-                <h2>GitHub</h2>
-                <!-- article-START -->
                 <article>
-                    <h3>Nedir?</h3>
-                    <p>GitHub, kalabalık bir ekibin sürüm kontrol sisteminde bir yazılım geliştirirken kullanabilecekleri internet tabanlı bir depolama servisidir.<br>GitHub servisi sayesinde pek çok kişiden oluşan kalabalık yazılım geliştirici ekipler bile aynı anda aynı proje üzerinde çalışabilir ve ayrı değişiklikler yapabilirler.</p>
-                    <h3>Neden İhtiyaç Duyarız?</h3>
-                    <p>Sürüm kontrol sisteminde <i>(git)</i> kayıt aldığımız versiyonları başka cihazlardan ulaşmak istediğimzde bize yardım eder. GitHub üstünden repository denilen sürüm geçmişlerinin ve dosyaların tutulduğu depolara projemiji göndererek uzak cihazlardan ulaşım sağlayabiliriz</p>
+                    <h3 class="font-sans-serif h3-25">Repository:</h3>
+                    <p class="font-sans-serif p-20">Remote ve Local olmak üzere ikiye ayrılır. Remote repolar herkese açık veya gizli olma özelliklerine sahiptirler git dosyamızı diğer cihazlardan ulaşım için remote repolara yüklememiz gerekir. Local repolar ise sadece kendi cihazımızda görebilceğimiz repositorylerdir</p>
                 </article>
-                <!-- article-END -->
-                <hr>
-            </section>
-            <!-- section-END -->
-            <!-- section-START -->
-            <section>
-                <!-- article-START -->
                 <article>
-                    <h3>Repository:</h3>
-                    <p>Remote ve Local olmak üzere ikiye ayrılır. Remote repolar herkese açık veya gizli olma özelliklerine sahiptirler git dosyamızı diğer cihazlardan ulaşım için remote repolara yüklememiz gerekir. Local repolar ise sadece kendi cihazımızda görebilceğimiz repositorylerdir</p>
-                    <h3>.gitignore:</h3>
-                    <p>git sürüm kontrol sisteminin işleme almamasını istediğimiz dosyaları içine kaydetmemiz gerekir ister repository oluştururken otomatik olarak bu dosyayı oluşturabiriz istersek de proje klasörümüze kendimiz oluşturabiliriz</p>
+                    <h3 class="font-sans-serif h3-25">.gitignore:</h3>
+                    <p class="font-sans-serif p-20">git sürüm kontrol sisteminin işleme almamasını istediğimiz dosyaları içine kaydetmemiz gerekir ister repository oluştururken otomatik olarak bu dosyayı oluşturabiriz istersek de proje klasörümüze kendimiz oluşturabiliriz</p>
                 </article>
-                <!-- article-END -->
+                <article>
+                    <h3 class="font-sans-serif h3-25">Branch:</h3>
+                    <p class="font-sans-serif p-20">Branchler projelerimizi birbirinden bağımsız dallara ayırmamızı sağlarlar.</p>
+                </article>
             </section>
-            <!-- section-END -->
         </main>
-        <!-- main-END -->
-        <!-- footer-START -->
         <footer>
             <ul>
                 <li class="footer-nav-item">
-                    <h3 class="nav-link">Ertuğrul Düğencioğlu</h3>
+                    <a class="footer-nav-link" href="index.html">Ana Sayfa</a>
                 </li>
                 <li class="footer-nav-item">
-                    <a class="nav-link" href="https://github.com/ertugruldugencioglu">GitHub</a>
+                    <a class="footer-nav-link" href="#top">Git ve GitHub Hakkında</a>
                 </li>
                 <li class="footer-nav-item">
-                    <a class="nav-link" href="mailto:ertugruldugenci@gmail.com">ertugruldugenci@gmail.com</a>
+                    <a class="footer-nav-link" href="learningcontent.html">Git ve GitHub Öğren</a>
                 </li>
             </ul>
         </footer>
-        <!-- footer-END -->
     </body>
-    <!-- body-END -->
 </html>
