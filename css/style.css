@@ -25,11 +25,15 @@ header{
     background-color: #9DC08B;
     color: black;
     padding: 12px;
-    margin: 12px;
     border-radius: 10px;
 }
 .navbar-link:hover{
     background-color: #609966;  
+}
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 /* *************************** */
 /*            footer           */
