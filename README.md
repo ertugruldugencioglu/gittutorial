@@ -1,6 +1,6 @@
 # Kodluyoruz Üçüncü Repo
 Bu repo [kodluyoruz](https://www.kodluyoruz.org/) Front-End Eğitiminde oluşturduğumuz üçüncü repo. İçeriğinde git ve github hakkımda temel bilgiler verdim. İçerisindeki dosyalarda bir adet README , bir adet proje öngörünümü, proje içerisinde kullanılan medya doyaları ve bir adet de index.html dosyası barındırıyor.
-![index](https://github.com/ertugruldugencioglu/kodluyoruzucuncurepo/blob/main/project%20view/index.png?raw=true)
+![index]()
 
 ## Installation
 Öncelikle projeyi clonelayın.
